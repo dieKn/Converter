@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83D70B31231C0D1800C65452 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D70B30231C0D1800C65452 /* CollectionViewCell.swift */; };
 		83E6B0FA2310E2AE00558863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6B0F92310E2AE00558863 /* AppDelegate.swift */; };
 		83E6B0FC2310E2AE00558863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6B0FB2310E2AE00558863 /* ViewController.swift */; };
 		83E6B0FF2310E2AE00558863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E6B0FD2310E2AE00558863 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83D70B30231C0D1800C65452 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		83E6B0F62310E2AE00558863 /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E6B0F92310E2AE00558863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E6B0FB2310E2AE00558863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				83E6B0F92310E2AE00558863 /* AppDelegate.swift */,
 				83E6B0FB2310E2AE00558863 /* ViewController.swift */,
 				83E6B0FD2310E2AE00558863 /* Main.storyboard */,
+				83D70B30231C0D1800C65452 /* CollectionViewCell.swift */,
 				83E6B1032310E2AE00558863 /* Assets.xcassets */,
 				83E6B1052310E2AE00558863 /* LaunchScreen.storyboard */,
 				83E6B1082310E2AE00558863 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				83E6B0FC2310E2AE00558863 /* ViewController.swift in Sources */,
 				83E6B0FA2310E2AE00558863 /* AppDelegate.swift in Sources */,
+				83D70B31231C0D1800C65452 /* CollectionViewCell.swift in Sources */,
 				83E6B1022310E2AE00558863 /* Converter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
