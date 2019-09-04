@@ -25,29 +25,29 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGj-Gf-oQM" userLabel="LeftResultView">
                                         <rect key="frame" x="8" y="8" width="144" height="206"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygj-4r-Yvg">
-                                                <rect key="frame" x="8" y="106" width="129" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-w0-tQY">
-                                                <rect key="frame" x="0.0" y="6" width="144" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ5-cp-Vby">
+                                                <rect key="frame" x="0.0" y="6" width="144" height="46"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="vJs-03-ZyF"/>
+                                                    <constraint firstAttribute="height" constant="46" id="d0m-td-oPA"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygj-4r-Yvg">
+                                                <rect key="frame" x="6" y="102" width="132" height="34"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="ygj-4r-Yvg" firstAttribute="top" secondItem="yqC-w0-tQY" secondAttribute="bottom" constant="50" id="E1E-gE-TIf"/>
-                                            <constraint firstItem="ygj-4r-Yvg" firstAttribute="centerX" secondItem="yqC-w0-tQY" secondAttribute="centerX" id="MI4-hF-VwS"/>
-                                            <constraint firstItem="yqC-w0-tQY" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="leading" id="Mx6-ia-qOz"/>
-                                            <constraint firstItem="yqC-w0-tQY" firstAttribute="top" secondItem="ZGj-Gf-oQM" secondAttribute="top" constant="6" id="XfK-9A-xvk"/>
-                                            <constraint firstItem="ygj-4r-Yvg" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="leadingMargin" id="lw8-X4-i7L"/>
-                                            <constraint firstAttribute="trailing" secondItem="yqC-w0-tQY" secondAttribute="trailing" id="tKg-w2-1Yg"/>
+                                            <constraint firstAttribute="trailing" secondItem="ygj-4r-Yvg" secondAttribute="trailing" constant="6" id="9Ny-mM-HpJ"/>
+                                            <constraint firstItem="ygj-4r-Yvg" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="leading" constant="6" id="BR5-OI-YZE"/>
+                                            <constraint firstItem="UJ5-cp-Vby" firstAttribute="top" secondItem="ZGj-Gf-oQM" secondAttribute="top" constant="6" id="EDS-2A-ACK"/>
+                                            <constraint firstItem="ygj-4r-Yvg" firstAttribute="top" secondItem="UJ5-cp-Vby" secondAttribute="bottom" constant="50" id="LV7-99-mQR"/>
+                                            <constraint firstAttribute="bottom" secondItem="ygj-4r-Yvg" secondAttribute="bottom" constant="70" id="PQV-VO-Bcr"/>
+                                            <constraint firstItem="UJ5-cp-Vby" firstAttribute="centerX" secondItem="ygj-4r-Yvg" secondAttribute="centerX" id="rZs-wo-8FW"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-QR-DQp" userLabel="RightResultView">
@@ -115,6 +115,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-sZ-Nkc">
                                                     <rect key="frame" x="8" y="8" width="65" height="65"/>
                                                     <state key="normal" title="1"/>
+                                                    <connections>
+                                                        <action selector="buttonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="68d-1s-KjQ"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
@@ -145,6 +148,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="OO6-cz-u4Y" id="i9n-Py-8wB"/>
+                        <outlet property="inputField" destination="UJ5-cp-Vby" id="eBY-SU-sbd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

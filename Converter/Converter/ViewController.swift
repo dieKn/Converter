@@ -11,8 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    
+    @IBOutlet weak var inputField: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    var strValue :String = ""
+    let intValue :Int = 0
     private let reuseIdentifier = "CollectionViewCell"
     
     let keyBoard: [String] = [
@@ -29,12 +34,12 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    @IBAction func buttonTouchDown(_ sender: UIButton) {
+        strValue = strValue + sender.accessibilityValue!
+        inputField.text = strValue
     }
-
-
+    
 }
 
 extension ViewController: UICollectionViewDelegate {
@@ -51,7 +56,11 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.name.setTitle(keyBoard[indexPath.item], for: .normal)
+        cell.name.accessibilityValue=keyBoard[indexPath.item]
         return cell
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 }
 
