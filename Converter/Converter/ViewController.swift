@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var inputField: UILabel!
+    @IBOutlet weak var outputField: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     
@@ -35,9 +36,18 @@ class ViewController: UIViewController {
         
     }
     
+    // 入出力メソッド
     @IBAction func buttonTouchDown(_ sender: UIButton) {
         strValue = strValue + sender.accessibilityValue!
         inputField.text = strValue
+        outputField.text = calculate(input: Int(strValue)!)
+    }
+    
+    //計算メソッド
+    func calculate( input:Int) -> String{
+        let output = input * 2
+         let strOutput = output.description
+        return strOutput
     }
     
 }
