@@ -10,17 +10,17 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var name: UIButton!
+    @IBOutlet weak var button: UIButton!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         // cellの枠の太さ
-        self.layer.borderWidth = 1.0
-        // cellの枠の色
-        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = 0
         // cellを丸くする
-        self.layer.cornerRadius = 8.0
+        self.layer.cornerRadius = 40
+        // 背景色をつける
+        self.layer.backgroundColor = UIColor.orange.cgColor
     }
     
 }

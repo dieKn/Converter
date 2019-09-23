@@ -26,62 +26,54 @@
                                         <rect key="frame" x="8" y="8" width="144" height="206"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ5-cp-Vby">
-                                                <rect key="frame" x="0.0" y="6" width="144" height="46"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="46" id="d0m-td-oPA"/>
-                                                </constraints>
+                                                <rect key="frame" x="0.0" y="6" width="144" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygj-4r-Yvg">
-                                                <rect key="frame" x="6" y="102" width="132" height="34"/>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0D-Vw-Dgi">
+                                                <rect key="frame" x="6" y="106" width="132" height="50"/>
+                                                <color key="backgroundColor" red="0.25359547830000001" green="1" blue="0.1682302131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="b7d-is-aTj"/>
-                                                    <constraint firstAttribute="width" constant="132" id="f8C-DW-HkE"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Xak-nO-hYq"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                            </pickerView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="ygj-4r-Yvg" secondAttribute="trailing" constant="6" id="9Ny-mM-HpJ"/>
-                                            <constraint firstItem="ygj-4r-Yvg" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="leading" constant="6" id="BR5-OI-YZE"/>
-                                            <constraint firstItem="UJ5-cp-Vby" firstAttribute="top" secondItem="ZGj-Gf-oQM" secondAttribute="top" constant="6" id="EDS-2A-ACK"/>
-                                            <constraint firstItem="ygj-4r-Yvg" firstAttribute="top" secondItem="UJ5-cp-Vby" secondAttribute="bottom" constant="50" id="LV7-99-mQR"/>
-                                            <constraint firstAttribute="bottom" secondItem="ygj-4r-Yvg" secondAttribute="bottom" constant="70" id="PQV-VO-Bcr"/>
-                                            <constraint firstItem="UJ5-cp-Vby" firstAttribute="centerX" secondItem="ygj-4r-Yvg" secondAttribute="centerX" id="rZs-wo-8FW"/>
+                                            <constraint firstAttribute="bottom" secondItem="A0D-Vw-Dgi" secondAttribute="bottom" constant="50" id="Alx-4y-XUX"/>
+                                            <constraint firstItem="UJ5-cp-Vby" firstAttribute="top" secondItem="ZGj-Gf-oQM" secondAttribute="top" id="Frt-5k-urx"/>
+                                            <constraint firstItem="A0D-Vw-Dgi" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="leading" constant="6" id="Hhm-nF-uXS"/>
+                                            <constraint firstItem="A0D-Vw-Dgi" firstAttribute="top" secondItem="UJ5-cp-Vby" secondAttribute="bottom" constant="50" id="KHA-eg-UAu"/>
+                                            <constraint firstItem="A0D-Vw-Dgi" firstAttribute="centerX" secondItem="UJ5-cp-Vby" secondAttribute="centerX" id="SNo-gm-bOD"/>
+                                            <constraint firstAttribute="trailing" secondItem="A0D-Vw-Dgi" secondAttribute="trailing" constant="6" id="SS9-EL-IPw"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-QR-DQp" userLabel="RightResultView">
                                         <rect key="frame" x="191" y="8" width="144" height="206"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-tk-e9X">
-                                                <rect key="frame" x="0.0" y="6" width="144" height="46"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UUk-jE-MJo">
-                                                <rect key="frame" x="6" y="102" width="132" height="34"/>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-Ia-qh6">
+                                                <rect key="frame" x="6" y="107" width="132" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="132" id="BbP-p4-2DY"/>
-                                                    <constraint firstAttribute="height" constant="34" id="deg-Wd-WJU"/>
+                                                    <constraint firstAttribute="height" constant="50" id="6fu-D0-Hnv"/>
                                                 </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                            </pickerView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="UUk-jE-MJo" secondAttribute="trailing" constant="6" id="1YM-y0-1cy"/>
-                                            <constraint firstItem="UUk-jE-MJo" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" constant="6" id="ABQ-NK-9WH"/>
-                                            <constraint firstAttribute="trailing" secondItem="Of1-tk-e9X" secondAttribute="trailing" id="BQN-Iu-Lxu"/>
-                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" id="Fqd-9a-nSN"/>
-                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="top" secondItem="cEG-QR-DQp" secondAttribute="top" constant="6" id="T3I-jy-03Q"/>
-                                            <constraint firstItem="UUk-jE-MJo" firstAttribute="top" secondItem="Of1-tk-e9X" secondAttribute="bottom" constant="50" id="VC7-yC-kjt"/>
-                                            <constraint firstAttribute="bottom" secondItem="UUk-jE-MJo" secondAttribute="bottom" constant="70" id="ZdV-jJ-XfW"/>
+                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="top" secondItem="Of1-tk-e9X" secondAttribute="bottom" constant="51" id="5XR-Nr-zGt"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Ff-Ia-qh6" secondAttribute="bottom" constant="49" id="5gd-tk-0Ud"/>
+                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" id="8Cu-Jv-oRl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Of1-tk-e9X" secondAttribute="trailing" id="Mnd-HZ-Xae"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Ff-Ia-qh6" secondAttribute="trailing" constant="6" id="cFg-50-pYk"/>
+                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" constant="6" id="qFp-lv-7mj"/>
+                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="centerX" secondItem="Of1-tk-e9X" secondAttribute="centerX" id="rq5-KL-SkQ"/>
+                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="top" secondItem="cEG-QR-DQp" secondAttribute="top" id="wHj-pO-hAn"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -99,7 +91,7 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OO6-cz-u4Y">
                                 <rect key="frame" x="16" y="263" width="343" height="384"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="384" id="ABn-1E-KSe"/>
                                 </constraints>
@@ -133,7 +125,7 @@
                                             <constraint firstItem="ogf-sZ-Nkc" firstAttribute="leading" secondItem="W2p-Tz-Z1v" secondAttribute="leadingMargin" id="SxQ-Wg-VlC"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="name" destination="ogf-sZ-Nkc" id="IKt-pv-cB5"/>
+                                            <outlet property="button" destination="ogf-sZ-Nkc" id="WJG-x3-682"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -154,7 +146,9 @@
                     <connections>
                         <outlet property="collectionView" destination="OO6-cz-u4Y" id="i9n-Py-8wB"/>
                         <outlet property="inputField" destination="UJ5-cp-Vby" id="eBY-SU-sbd"/>
+                        <outlet property="inputUIPicker" destination="A0D-Vw-Dgi" id="hrK-y3-y36"/>
                         <outlet property="outputField" destination="Of1-tk-e9X" id="Dc3-Lb-8O9"/>
+                        <outlet property="outputUIPicker" destination="4Ff-Ia-qh6" id="z4K-Js-3p1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
