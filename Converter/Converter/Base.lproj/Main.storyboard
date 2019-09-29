@@ -23,16 +23,16 @@
                                 <rect key="frame" x="16" y="20" width="343" height="222"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGj-Gf-oQM" userLabel="LeftResultView">
-                                        <rect key="frame" x="8" y="8" width="144" height="206"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="214"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ5-cp-Vby">
-                                                <rect key="frame" x="0.0" y="6" width="144" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ5-cp-Vby">
+                                                <rect key="frame" x="0.0" y="6" width="169" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0D-Vw-Dgi">
-                                                <rect key="frame" x="6" y="106" width="132" height="50"/>
+                                                <rect key="frame" x="6" y="56" width="157" height="50"/>
                                                 <color key="backgroundColor" red="0.25359547830000001" green="1" blue="0.1682302131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Xak-nO-hYq"/>
@@ -40,53 +40,55 @@
                                             </pickerView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="A0D-Vw-Dgi" secondAttribute="bottom" constant="50" id="Alx-4y-XUX"/>
-                                            <constraint firstItem="UJ5-cp-Vby" firstAttribute="top" secondItem="ZGj-Gf-oQM" secondAttribute="top" id="Frt-5k-urx"/>
+                                            <constraint firstItem="UJ5-cp-Vby" firstAttribute="top" secondItem="ZGj-Gf-oQM" secondAttribute="top" constant="6" id="Frt-5k-urx"/>
                                             <constraint firstItem="A0D-Vw-Dgi" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="leading" constant="6" id="Hhm-nF-uXS"/>
-                                            <constraint firstItem="A0D-Vw-Dgi" firstAttribute="top" secondItem="UJ5-cp-Vby" secondAttribute="bottom" constant="50" id="KHA-eg-UAu"/>
+                                            <constraint firstAttribute="trailing" secondItem="UJ5-cp-Vby" secondAttribute="trailing" id="LzV-8X-ULs"/>
                                             <constraint firstItem="A0D-Vw-Dgi" firstAttribute="centerX" secondItem="UJ5-cp-Vby" secondAttribute="centerX" id="SNo-gm-bOD"/>
                                             <constraint firstAttribute="trailing" secondItem="A0D-Vw-Dgi" secondAttribute="trailing" constant="6" id="SS9-EL-IPw"/>
+                                            <constraint firstItem="A0D-Vw-Dgi" firstAttribute="top" secondItem="UJ5-cp-Vby" secondAttribute="bottom" constant="50" id="zyV-BC-9Cr"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-QR-DQp" userLabel="RightResultView">
-                                        <rect key="frame" x="191" y="8" width="144" height="206"/>
+                                        <rect key="frame" x="169" y="0.0" width="174" height="206"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-tk-e9X">
-                                                <rect key="frame" x="0.0" y="0.0" width="144" height="56"/>
+                                                <rect key="frame" x="0.0" y="6" width="174" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-Ia-qh6">
-                                                <rect key="frame" x="6" y="107" width="132" height="50"/>
+                                                <rect key="frame" x="6" y="56" width="162" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="6fu-D0-Hnv"/>
+                                                    <constraint firstAttribute="height" constant="50" id="DgE-uB-j0b"/>
                                                 </constraints>
                                             </pickerView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="top" secondItem="Of1-tk-e9X" secondAttribute="bottom" constant="51" id="5XR-Nr-zGt"/>
-                                            <constraint firstAttribute="bottom" secondItem="4Ff-Ia-qh6" secondAttribute="bottom" constant="49" id="5gd-tk-0Ud"/>
-                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" id="8Cu-Jv-oRl"/>
-                                            <constraint firstAttribute="trailing" secondItem="Of1-tk-e9X" secondAttribute="trailing" id="Mnd-HZ-Xae"/>
-                                            <constraint firstAttribute="trailing" secondItem="4Ff-Ia-qh6" secondAttribute="trailing" constant="6" id="cFg-50-pYk"/>
-                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" constant="6" id="qFp-lv-7mj"/>
-                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="centerX" secondItem="Of1-tk-e9X" secondAttribute="centerX" id="rq5-KL-SkQ"/>
-                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="top" secondItem="cEG-QR-DQp" secondAttribute="top" id="wHj-pO-hAn"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Ff-Ia-qh6" secondAttribute="trailing" constant="6" id="LRj-nz-BXL"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Of1-tk-e9X" secondAttribute="trailing" id="LtW-KR-vxs"/>
+                                            <constraint firstAttribute="trailing" secondItem="Of1-tk-e9X" secondAttribute="trailing" id="VQo-5J-AeO"/>
+                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="top" secondItem="Of1-tk-e9X" secondAttribute="bottom" constant="50" id="Xnd-CM-cCs"/>
+                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" id="Y0U-0G-sci"/>
+                                            <constraint firstItem="4Ff-Ia-qh6" firstAttribute="leading" secondItem="cEG-QR-DQp" secondAttribute="leading" constant="6" id="dst-E2-mgl"/>
+                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="top" secondItem="cEG-QR-DQp" secondAttribute="top" constant="6" id="jLa-ft-OuQ"/>
+                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cEG-QR-DQp" secondAttribute="leading" id="qCQ-gi-FIU"/>
+                                            <constraint firstItem="Of1-tk-e9X" firstAttribute="centerX" secondItem="cEG-QR-DQp" secondAttribute="centerX" id="yYc-MM-kqs"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="top" secondItem="vma-sy-q9w" secondAttribute="topMargin" id="3AC-Zf-x9O"/>
-                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="bottom" secondItem="vma-sy-q9w" secondAttribute="bottomMargin" id="3cj-3w-oEy"/>
-                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="bottom" secondItem="cEG-QR-DQp" secondAttribute="bottom" id="BPx-Nn-rcA"/>
-                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="top" secondItem="cEG-QR-DQp" secondAttribute="top" id="NLt-yP-WrD"/>
-                                    <constraint firstItem="cEG-QR-DQp" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="trailing" constant="39" id="OOy-0R-7iF"/>
-                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="leading" secondItem="vma-sy-q9w" secondAttribute="leadingMargin" id="bQK-Au-jpq"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZGj-Gf-oQM" secondAttribute="trailing" constant="191" id="etd-P2-xBw"/>
-                                    <constraint firstItem="cEG-QR-DQp" firstAttribute="trailing" secondItem="vma-sy-q9w" secondAttribute="trailingMargin" id="qW7-ZC-fMw"/>
+                                    <constraint firstItem="cEG-QR-DQp" firstAttribute="leading" secondItem="vma-sy-q9w" secondAttribute="leading" constant="169" id="2Z3-Ng-fCd"/>
+                                    <constraint firstAttribute="bottom" secondItem="cEG-QR-DQp" secondAttribute="bottom" constant="16" id="5dj-Ll-u80"/>
+                                    <constraint firstAttribute="top" secondItem="cEG-QR-DQp" secondAttribute="top" id="Aah-HA-hqO"/>
+                                    <constraint firstItem="cEG-QR-DQp" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="trailing" id="BhC-hk-Jzm"/>
+                                    <constraint firstAttribute="trailing" secondItem="cEG-QR-DQp" secondAttribute="trailing" id="Dhe-Fc-CCc"/>
+                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="top" secondItem="vma-sy-q9w" secondAttribute="top" id="F94-6o-4tF"/>
+                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="bottom" secondItem="vma-sy-q9w" secondAttribute="bottomMargin" id="Zs8-QQ-kQN"/>
+                                    <constraint firstItem="cEG-QR-DQp" firstAttribute="leading" secondItem="ZGj-Gf-oQM" secondAttribute="trailing" id="fer-Iu-PW9"/>
+                                    <constraint firstItem="ZGj-Gf-oQM" firstAttribute="leading" secondItem="vma-sy-q9w" secondAttribute="leading" id="wOE-y4-aG0"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OO6-cz-u4Y">
@@ -122,7 +124,9 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="ogf-sZ-Nkc" secondAttribute="bottom" id="17E-ln-9Tv"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="ogf-sZ-Nkc" secondAttribute="trailing" id="3LZ-4m-ub3"/>
                                             <constraint firstItem="ogf-sZ-Nkc" firstAttribute="top" secondItem="W2p-Tz-Z1v" secondAttribute="topMargin" id="K9p-cn-Rhk"/>
+                                            <constraint firstItem="ogf-sZ-Nkc" firstAttribute="centerX" secondItem="W2p-Tz-Z1v" secondAttribute="centerX" id="Ogg-sR-ZSj"/>
                                             <constraint firstItem="ogf-sZ-Nkc" firstAttribute="leading" secondItem="W2p-Tz-Z1v" secondAttribute="leadingMargin" id="SxQ-Wg-VlC"/>
+                                            <constraint firstItem="ogf-sZ-Nkc" firstAttribute="centerY" secondItem="W2p-Tz-Z1v" secondAttribute="centerY" id="uUJ-sU-gNb"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="button" destination="ogf-sZ-Nkc" id="WJG-x3-682"/>

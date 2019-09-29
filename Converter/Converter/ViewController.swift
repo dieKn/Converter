@@ -61,30 +61,32 @@ class ViewController: UIViewController {
     func calculate( input:Int) -> String{
         let output: Double
         let strOutput: String;
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
         if(self.texts[0][self.inputUIPicker.selectedRow(inComponent: 0)] == "キロ" && self.texts[0][self.outputUIPicker.selectedRow(inComponent: 0)] == ""){
             output = Double(input) * 1000
-            return output.description
+            return formatter.string(from: output as NSNumber)!
         }else if(self.texts[0][self.inputUIPicker.selectedRow(inComponent: 0)] == "ミリ" && self.texts[0][self.outputUIPicker.selectedRow(inComponent: 0)] == ""){
             output = Double(input) / 1000
-            return output.description
+            return formatter.string(from: output as NSNumber)!
         }else if(self.texts[0][self.inputUIPicker.selectedRow(inComponent: 0)] == "ミクロ" && self.texts[0][self.outputUIPicker.selectedRow(inComponent: 0)] == ""){
             output = Double(input) / 1000000
-            return output.description
+            return formatter.string(from: output as NSNumber)!
         }else if(self.texts[0][self.inputUIPicker.selectedRow(inComponent: 0)] == "マイクロ" && self.texts[0][self.outputUIPicker.selectedRow(inComponent: 0)] == ""){
             output = Double(input) / 1000000000
-            return output.description
+            return formatter.string(from: output as NSNumber)!
         }else if(self.texts[0][self.inputUIPicker.selectedRow(inComponent: 0)] == "メガ" && self.texts[0][self.outputUIPicker.selectedRow(inComponent: 0)] == ""){
             output = Double(input) * 1000000
-            return output.description
+            return formatter.string(from: output as NSNumber)!
         }else if(self.texts[0][self.inputUIPicker.selectedRow(inComponent: 0)] == "ギガ" && self.texts[0][self.outputUIPicker.selectedRow(inComponent: 0)] == ""){
             output = Double(input) * 1000000000
-            return output.description
+            return formatter.string(from: output as NSNumber)!
         }else if(self.texts[0][self.inputUIPicker.selectedRow(inComponent: 0)] == "テラ" && self.texts[0][self.outputUIPicker.selectedRow(inComponent: 0)] == ""){
             let output = input * 1000000000000
-            return output.description
+            return formatter.string(from: output as NSNumber)!
         }
         output = Double(input) * 2
-        strOutput = output.description
+        strOutput = formatter.string(from: output as NSNumber)!
         return strOutput
     }
     
@@ -127,11 +129,11 @@ extension ViewController: UIPickerViewDelegate{
     
     
     // pickerが選択された際に呼ばれるデリゲートメソッド.
-    // TODO: pickerの装飾を変えられない
-    private func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) -> UIView {
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView{
+        let label = UILabel()
         label.text = texts[component][row]
-        label.textColor = UIColor.blue
-        label.font = label.font.withSize(4)
+        label.textAlignment = NSTextAlignment.center
+        label.font = UIFont(name: "HiraKakuProN-W6", size: 11)
         return label
     }
 }
